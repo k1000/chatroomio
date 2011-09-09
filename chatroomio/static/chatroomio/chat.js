@@ -76,10 +76,6 @@ function addMessage (from, text, time, _class) {
     time = new Date(time * 1000);
   }
 
-  //every message you see is actually a table with 3 cols:
-  //  the time,
-  //  the person who caused the event,
-  //  and the content
   var messageElement = $(document.createElement("div"));
 
   messageElement.addClass("message");
