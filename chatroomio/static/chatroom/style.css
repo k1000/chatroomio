@@ -1,0 +1,99 @@
+
+/* ---------- CHAT -------------- */
+#chat {
+  background: #e0e0e0;
+  width: 270px;
+  float: right;
+  box-shadow: 0px 0px 6px #c2cdd7;
+}
+#toolbar {
+  color: #fff;
+  bottom: 0;
+  background: #50575d;
+}
+
+#entry {
+  width: 100%;
+  font-size: inherit;
+  padding: 1em;
+  margin: 0;
+  border-width: 0;
+  outline-width: 0;
+  clear: both;
+}
+
+#log {
+  display: block;
+  /* enough padding to clear the toolbar.. is there a better way to do this? */
+  height: 30em;
+  overflow: auto;
+}
+
+/* not very important info */
+.notice td, .join td, .part td, .message .date { color: #555; }
+.error td { color: #933; }
+.personal .nick, .notice .nick { color: #49759c; }
+
+#chat .message {
+  margin: 0.1em 0;
+  clear: both;
+  float: none;
+  overflow: hidden;
+}
+#chat .meta{
+	float: left;
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	background: #eceeee;
+	margin: .3em;
+}
+#chat .info .msg-text{
+	background: #fcffe5;
+}
+#chat .self .meta,
+#chat .self .msg-text{
+  float: right;
+}
+.meta date{
+	color: gray;
+}
+.msg-text {
+  color: #2e2e2e;
+  display: block;
+  float: left;
+  background: white;
+  padding: 4px 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 6px #c2cdd7;
+}
+
+.nick { 
+  font-weight: bold;
+  padding: 0 1em 0 0.5em;
+}
+
+.nick a {
+  color: inherit;
+}
+
+#toolbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#toolbar li {
+  display: block; 
+  float: left;
+  margin: 0 2em 0 0;
+}
+
+#usersLink {
+  color: inherit;
+}
+#chat input{
+	background: gray;
+}
