@@ -4,6 +4,8 @@ About
 *chatroomio* - chat rooms with tornadio_.
 Works with https://github.com/k1000/django-tornadio
 
+Supports channels/rooms
+
 Installation
 ------------
 
