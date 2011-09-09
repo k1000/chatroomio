@@ -19,6 +19,11 @@ Installation
     
         pip install -e git+https://github.com/k1000/chatroomio#egg=chatroomio
 
+2. Requires jQuery & socket.io::
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.socket.io/stable/socket.io.js" ></script>
+        
 
 DEPENDENCIES
 ------------
