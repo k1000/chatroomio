@@ -1,7 +1,7 @@
 import simplejson
 import time
 import tornadio
-
+DEBUG = True
 CHANNELS = {}
 
 class Channel(object) :
@@ -132,4 +132,4 @@ class ChatConnection(tornadio.SocketConnection):
 
 
 
-ChatRouter = tornadio.get_router(ChatConnection)
+ChatRouter = tornadio.get_router(ChatConnection, resource="chat")

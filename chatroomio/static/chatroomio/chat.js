@@ -1,6 +1,7 @@
 var CONFIG = { debug: false
-             , port: 8777
+             , port: 8011
              , last_message_time: 1
+             , resource: "chat"
              , dir: "/chat" // set in onConnect
              };
 
@@ -144,7 +145,7 @@ $(document).ready(function() {
     onclose = function(message) { };
     ws = new io.Socket(window.location.hostname, {
             port:CONFIG.port,
-            resource:"socket.io/",
+            resource:CONFIG.resource,
             transports:['websocket', 'flashsocket','xhr-multipart', 'xhr-polling']
         }
     );
@@ -152,10 +153,15 @@ $(document).ready(function() {
     ws.on('connect', onopen);
     ws.on('disconnect', onclose);
     ws.connect();
-
+    
+    function connect(nick, room){
+        ws.connect();
+    }
+    
     //submit a new message to the server
     function send(msg) {
       ws.send( msg );
     }
+    
     
 })
