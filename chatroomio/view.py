@@ -37,8 +37,6 @@ def get_channel(name):
 class ChatConnection(tornadio.SocketConnection):
     # Class level variable
     participants = {}
-    nick = ""
-    room = ""
 
     def on_open(self, *args, **kwargs):
         pass
